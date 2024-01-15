@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    color-scheme: normal;
+}
+
 body {
     position: relative;
     font-family: 'Montserrat Alternates';
