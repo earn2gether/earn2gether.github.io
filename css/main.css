@@ -25,7 +25,11 @@ body {
     line-height: 1.5;
     color: whitesmoke;
     text-shadow: 0.05em 0.05em 0 black;
-    mix-blend-mode: difference;
+    background-color: #000555;
+    background-image: linear-gradient(hsl(180, 100%, 20%), hsl(225, 100%, 20%), hsl(270, 100%, 20%), hsl(315, 100%, 20%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 h1,
