@@ -244,7 +244,8 @@ footer {
         display: none;
     }
 
-    .first-screen__title {
+    .first-screen__title,
+    .first-screen__subtitle {
         text-align: left;
     }
 
