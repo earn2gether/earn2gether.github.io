@@ -175,7 +175,8 @@ main {
     break-inside: avoid;
 }
 
-.advertisements-item a::after {
+.advertisements-item a::after,
+.snowball-wrap a::after {
     content: none;
 }
 
