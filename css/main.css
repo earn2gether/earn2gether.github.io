@@ -136,6 +136,20 @@ header {
     height: auto;
 }
 
+.header__banner {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.header__banner img {
+    width: 100%;
+    max-width: 468px;
+}
+
+.header__banner a::after {
+    content: none;
+}
+
 .header__socials a::after {
     content: none;
 }
@@ -227,6 +241,7 @@ footer {
         grid-gap: unset;
     }
 
+    .header__banner,
     .advertisements-item {
         display: none;
     }
