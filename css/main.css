@@ -31,9 +31,7 @@ body {
   line-height: 1.5;
   color: whitesmoke;
 }
-
-body::before,
-body::after {
+body::before, body::after {
   content: "";
   position: absolute;
   top: 0;
@@ -42,14 +40,12 @@ body::after {
   height: 100%;
   background-position: center;
 }
-
 body::before {
   z-index: -2;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 body::after {
   z-index: -1;
   background-image: url("../img/overlay.png");
@@ -63,17 +59,14 @@ h2 {
   line-height: 1;
   margin-bottom: 0.5em;
 }
-
 h1 .thin,
 h2 .thin {
   font-weight: 400;
 }
-
 h1 .smaller,
 h2 .smaller {
   font-size: smaller;
 }
-
 h1 a,
 h2 a {
   color: cyan;
@@ -91,7 +84,6 @@ h2 {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
 }
-
 .digital span {
   font-weight: 700;
 }
@@ -151,20 +143,16 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-
 .header__logo h2 {
   margin-bottom: 0;
   color: cyan;
 }
-
 .header__logo h2 span {
   color: blueviolet;
 }
-
 .header__logo p {
   color: whitesmoke;
 }
-
 .header__logo img {
   width: 64px;
   height: auto;
@@ -174,12 +162,10 @@ header {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-
 .header__banner img {
   width: 100%;
   max-width: 468px;
 }
-
 .header__banner a::after {
   content: none;
 }
@@ -208,7 +194,6 @@ main {
   width: 100%;
   max-width: 256px;
 }
-
 .first-screen__logo img {
   width: 100%;
   height: auto;
@@ -231,22 +216,21 @@ main {
 .projects {
   display: block;
   -moz-columns: 12rem;
-  columns: 12rem;
+       columns: 12rem;
   -moz-column-count: 2;
-  column-count: 2;
+       column-count: 2;
   gap: 2rem;
 }
 
 .projects-item {
   margin-bottom: 2rem;
   -moz-column-break-inside: avoid;
-  break-inside: avoid;
+       break-inside: avoid;
 }
 
 .advertisements-item:not(:last-child) {
   margin-bottom: 1rem;
 }
-
 .advertisements-item a::after {
   content: none;
 }
@@ -263,7 +247,6 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-
 .footer__grid p {
   margin-bottom: 0;
 }
@@ -273,41 +256,30 @@ footer {
     gap: 1rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   .content__grid {
     grid-template-columns: 1fr;
     grid-gap: unset;
   }
-
   .header__banner,
   .advertisements-item {
     display: none;
   }
 }
-
 @media screen and (max-width: 576px) {
-
   header,
   .first-screen,
   main {
     margin-bottom: 2rem;
   }
-
-  .first-screen__logo {
-    display: none;
-  }
-
   .first-screen__title,
   .first-screen__subtitle {
     text-align: left;
   }
-
   .projects {
     -moz-column-count: 1;
-    column-count: 1;
+         column-count: 1;
   }
-
   .projects-item:last-child {
     margin-bottom: 0;
   }
